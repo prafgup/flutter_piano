@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Keys.dart';
+import 'HelperClass.dart';
 class WhiteKey extends StatelessWidget {
 
   final keynote;
@@ -10,8 +10,8 @@ class WhiteKey extends StatelessWidget {
 
         return GestureDetector(
           onTap: (){
-            Keys.audioPlayer.stop();
-            Keys.player.play('tones/$keynote.ogg');
+            HelperClass.audioPlayer.stop();
+            HelperClass.player.play('tones/$keynote.ogg');
           },
           child: Container(
               child: Align(
@@ -44,13 +44,8 @@ class WhiteKey extends StatelessWidget {
                         width: 0.5
                     )
                 ),
-
-
-
-
               )
           ),
         );
-
   }
 }

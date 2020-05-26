@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Keys.dart';
+import 'HelperClass.dart';
 class BlackKey extends StatelessWidget {
 
   final keynote;
@@ -20,8 +20,8 @@ class BlackKey extends StatelessWidget {
       {
         return GestureDetector(
           onTap: (){
-            Keys.audioPlayer.stop();
-            Keys.player.play('tones/$keynote.ogg');
+            HelperClass.audioPlayer.stop();
+            HelperClass.player.play('tones/$keynote.ogg');
             print('blackkey');
           },
           child: Container(
@@ -43,7 +43,6 @@ class BlackKey extends StatelessWidget {
             ),
             height: 40.0,
             width: 200.0,
-
             decoration: BoxDecoration(
                 color: Colors.black,
                 borderRadius: BorderRadius.only(

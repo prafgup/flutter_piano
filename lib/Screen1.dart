@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './Keys.dart';
+import './HelperClass.dart';
 
 class Screen1 extends StatelessWidget {
   @override
@@ -14,16 +14,14 @@ class Screen1 extends StatelessWidget {
         child: Stack(
             children: <Widget>[
               Column(
-                children:Keys.getWhiteKeysList(),
+                children:HelperClass.getWhiteKeysList(),
               ),
               Padding(
                 padding: EdgeInsets.only(top: 20.0),
                 child: Column(
-                  children:Keys.getBlackKeysList(),
+                  children:HelperClass.getBlackKeysList(),
                 ),
               ),
-
-
             ],
         ),
       )

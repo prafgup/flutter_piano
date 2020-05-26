@@ -4,15 +4,16 @@ import 'WhiteKey.dart';
 import 'package:audioplayers/audio_cache.dart';
 import 'package:audioplayers/audioplayers.dart';
 
-class Keys{
+class HelperClass{
 
   static AudioPlayer audioPlayer=new AudioPlayer(playerId: "1");
   static AudioCache player = AudioCache(fixedPlayer:audioPlayer );
+
   static List<Widget> getWhiteKeysList()
   {
     List<Widget> mKeysList=[];
-
     mKeysList.add(WhiteKey("C8"));
+
     for(int i=7;i>0;--i)
     {
       mKeysList.add(WhiteKey("B"+i.toString()));
@@ -22,7 +23,6 @@ class Keys{
       mKeysList.add(WhiteKey("E"+i.toString()));
       mKeysList.add(WhiteKey("D"+i.toString()));
       mKeysList.add(WhiteKey("C"+i.toString()));
-
     }
 
     mKeysList.add(WhiteKey("B0"));
@@ -44,7 +44,6 @@ class Keys{
       mKeysList.add(BlackKey("skip"));
       mKeysList.add(BlackKey("D"+i.toString()+"#"));
       mKeysList.add(BlackKey("C"+i.toString()+"#"));
-
     }
 
     mKeysList.add(BlackKey("skip"));
@@ -52,6 +51,4 @@ class Keys{
 
     return mKeysList;
   }
-
-
 }
