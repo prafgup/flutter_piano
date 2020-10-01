@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'Screen1.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MainAppInsert());
 
-class MyApp extends StatelessWidget {
+class MainAppInsert extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
